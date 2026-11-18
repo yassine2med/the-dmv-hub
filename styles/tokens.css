@@ -1,0 +1,83 @@
+/* ─────────────────────────────────────────────
+   The DMV Hub — Design Tokens
+   Aesthetic: "DMV-Rooted Warmth" (warm light).
+   Agents: use these variables. Do not invent new
+   colors mid-build. Ask Yaz before changing tokens.
+   Rebrand spec: docs/superpowers/specs/2026-06-26-dmv-hub-rebrand-warmth-design.md
+   ───────────────────────────────────────────── */
+
+:root {
+  /* Core palette — warm light */
+  --bg:            #FAF5EE;   /* warm paper background */
+  --bg-elevated:   #FFFDF9;   /* ivory cards, panels */
+  --fg:            #241F1A;   /* warm charcoal text */
+  --fg-muted:      #6B5F52;   /* warm taupe secondary text */
+
+  /* Accents — use sparingly */
+  --accent:        #E8743B;   /* terracotta */
+  --accent-glow:   #F2A93B;   /* amber highlight */
+  --accent-warn:   #E8743B;   /* terracotta */
+
+  /* Borders & lines */
+  --border:        #E7DCCB;   /* warm border */
+
+  /* Typography */
+  --font-sans:     "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-display:  "Fraunces", Georgia, serif;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
+  --space-6: 64px;
+
+  /* Radius & shadow (warm, soft — never neon glow) */
+  --radius:        16px;
+  --shadow:        0 12px 30px -12px rgba(60, 40, 20, 0.18);
+}
+
+/* DMV Hub — brand tokens. data-theme selects the palette. */
+:root,
+[data-theme='casual'] {
+  /* Casual — warm light */
+  --color-bg: #FAF5EE;
+  --color-bg-alt: #F2E9DA;
+  --color-surface: #FFFDF9;
+  --color-surface-2: #FFFDF9;
+  --color-card: #FFFDF9;
+  --color-border: #E7DCCB;
+  --color-text: #241F1A;
+  --color-muted: #6B5F52;
+}
+
+[data-theme='party'] {
+  /* Party — cyber dark (original values, frozen) */
+  --color-bg: #080B14;
+  --color-bg-alt: #0D1120;
+  --color-surface: #0D1120;
+  --color-surface-2: #131B30;
+  --color-card: #0F1525;
+  --color-border: #1A2744;
+  --color-text: #E8ECF5;
+  --color-muted: #8A93A6;
+}
+
+/* Brand gradient + accents — identical across themes (accent use only). */
+:root {
+  --gradient-hub: linear-gradient(135deg, #FF6B9D, #C850C0, #4158D0, #43CEA2);
+  --color-hub-pink: #FF6B9D;
+  --color-hub-purple: #C850C0;
+  --color-hub-blue: #4158D0;
+  --color-hub-teal: #43CEA2;
+
+  /* Warm accents */
+  --color-terracotta: #E8743B;
+  --color-amber: #F2A93B;
+
+  /* State flag colors (tasteful, not neon) */
+  --color-dc-red: #C0392B;
+  --color-md-gold: #E0A800;
+  --color-va-navy: #1B2A4A;
+}

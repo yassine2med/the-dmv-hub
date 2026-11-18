@@ -1,0 +1,165 @@
+import type { Event } from '@/lib/types'
+
+export const events: Event[] = [
+  {
+    id: 'game-night-dc-july',
+    title: 'Game Night in Adams Morgan',
+    date: '2026-07-11T19:00:00',
+    locationArea: 'DC',
+    locationLabel: 'Adams Morgan, DC',
+    vibe: 'Gaming',
+    description:
+      'A planned board-game night with rotating tables for games such as Codenames, Spades, and Uno. Bring a game you love or arrive ready to learn one. Final venue, capacity, host, and timing will be confirmed in Discord.',
+    discordLink: 'https://discord.gg/dC8vPZmXx9',
+    featured: true,
+  },
+  {
+    id: 'rooftop-mixer-nova',
+    title: 'Rooftop Happy Hour in NoVA',
+    date: '2026-07-18T18:00:00',
+    locationArea: 'VA',
+    locationLabel: 'Arlington, VA',
+    vibe: 'Nightlife',
+    description:
+      'A planned summer rooftop meetup in Arlington with a low-pressure social format. The final venue, host, minimum purchase, accessibility details, and capacity will be confirmed in Discord before the event.',
+    discordLink: 'https://discord.gg/dC8vPZmXx9',
+    featured: true,
+  },
+  {
+    id: 'food-crawl-silver-spring',
+    title: 'Food Crawl in Silver Spring',
+    date: '2026-07-25T12:00:00',
+    locationArea: 'MD',
+    locationLabel: 'Silver Spring, MD',
+    vibe: 'Food',
+    description:
+      'A proposed walking route through several Silver Spring restaurants, with each person paying for their own food. The exact stops, dietary notes, walking distance, capacity, and organizer will be posted in Discord after venues are confirmed.',
+    discordLink: 'https://discord.gg/dC8vPZmXx9',
+    featured: true,
+  },
+  {
+    id: 'speed-friending-dc',
+    title: 'Speed Friending Night',
+    date: '2026-08-01T18:30:00',
+    locationArea: 'DC',
+    locationLabel: 'U Street, DC',
+    vibe: 'Speed Friending',
+    description:
+      'A proposed structured social night using short conversations and rotating prompts, so nobody has to work the room cold. The final venue, round length, capacity, host, and optional post-event plan will be confirmed in Discord.',
+    discordLink: 'https://discord.gg/dC8vPZmXx9',
+    recurrence: 'biweekly',
+    seriesName: 'Speed Friending — Every Other Thursday, U Street',
+  },
+  {
+    id: 'ethiopian-night-silver-spring',
+    title: 'Ethiopian Restaurant Takeover',
+    date: '2026-08-08T18:00:00',
+    locationArea: 'MD',
+    locationLabel: 'Silver Spring, MD',
+    vibe: 'Food',
+    description:
+      'A proposed group dinner at an Ethiopian restaurant in Silver Spring, ideally with family-style ordering for people who opt in. The restaurant, reservation, dietary guidance, cost expectations, and host will be confirmed in Discord.',
+    discordLink: 'https://discord.gg/dC8vPZmXx9',
+    featured: true,
+  },
+  {
+    id: 'shenandoah-hike',
+    title: 'Shenandoah Sunrise Hike',
+    date: '2026-08-15T06:30:00',
+    locationArea: 'VA',
+    locationLabel: 'Shenandoah, VA',
+    vibe: 'Outdoors',
+    description:
+      'A proposed early-morning group hike with a moderate route and optional carpool coordination from Arlington. Trail difficulty, weather, transportation, emergency planning, required gear, and trip leader must be confirmed in Discord before anyone travels.',
+    discordLink: 'https://discord.gg/dC8vPZmXx9',
+  },
+  {
+    id: 'columbia-heights-bar-crawl',
+    title: 'Columbia Heights Bar Crawl',
+    date: '2026-08-22T20:00:00',
+    locationArea: 'DC',
+    locationLabel: 'Columbia Heights, DC',
+    vibe: 'Nightlife',
+    description:
+      'A proposed three-stop nightlife route in Columbia Heights for adults 21+. The venues, walking route, organizer, costs, accessibility notes, and transportation guidance will be confirmed in Discord. Participation never requires drinking alcohol.',
+    discordLink: 'https://discord.gg/dC8vPZmXx9',
+  },
+  {
+    id: 'bethesda-dating-mixer',
+    title: 'Singles Mixer in Bethesda',
+    date: '2026-08-29T19:00:00',
+    locationArea: 'MD',
+    locationLabel: 'Bethesda, MD',
+    vibe: 'Dating Mixers',
+    description:
+      'A proposed structured mixer for singles ages 24 to 38 using rotating conversations instead of cold approaches. The venue, capacity, host, participation rules, cost, and final format will be confirmed in Discord.',
+    discordLink: 'https://discord.gg/dC8vPZmXx9',
+    featured: true,
+  },
+  {
+    id: 'h-street-run-club',
+    title: 'H Street Run Club',
+    date: '2026-09-05T07:00:00',
+    locationArea: 'DC',
+    locationLabel: 'H Street NE, DC',
+    vibe: 'Fitness',
+    description:
+      'A proposed Saturday-morning 5K loop around H Street and Lincoln Park with optional coffee afterward. The exact route, pace groups, weather plan, safety guidance, and run leader will be confirmed in Discord.',
+    discordLink: 'https://discord.gg/dC8vPZmXx9',
+  },
+  {
+    id: 'annapolis-day-trip',
+    title: 'Day Trip: Annapolis Old Town',
+    date: '2026-09-13T10:00:00',
+    locationArea: 'MD',
+    locationLabel: 'Annapolis, MD',
+    vibe: 'Day Trips',
+    description:
+      'A proposed day trip to Annapolis with a harbor walk, optional food stop, and independently coordinated transportation. The itinerary, carpool expectations, costs, accessibility notes, and trip leader will be confirmed in Discord.',
+    discordLink: 'https://discord.gg/dC8vPZmXx9',
+  },
+  {
+    id: 'rosslyn-movie-night',
+    title: 'Outdoor Movie Night by the Waterfront',
+    date: '2026-09-19T19:30:00',
+    locationArea: 'VA',
+    locationLabel: 'Rosslyn, VA',
+    vibe: 'Movies',
+    description:
+      'A proposed outdoor movie meetup near Rosslyn with attendees bringing their own blanket or chair. The screening, meeting point, weather backup, accessibility information, and organizer will be confirmed in Discord.',
+    discordLink: 'https://discord.gg/dC8vPZmXx9',
+  },
+  {
+    id: 'west-african-night-rockville',
+    title: 'West African Restaurant Night in Rockville',
+    date: '2026-09-26T18:30:00',
+    locationArea: 'MD',
+    locationLabel: 'Rockville, MD',
+    vibe: 'Food',
+    description:
+      'A proposed group dinner at a West African restaurant in Rockville. The restaurant, reservation, dietary information, cost expectations, capacity, and organizer will be confirmed in Discord before the plan is final.',
+    discordLink: 'https://discord.gg/dC8vPZmXx9',
+  },
+  {
+    id: 'potomac-kayaking',
+    title: 'Kayaking the C&O Canal',
+    date: '2026-10-04T10:00:00',
+    locationArea: 'DC',
+    locationLabel: 'Georgetown, DC',
+    vibe: 'Outdoors',
+    description:
+      'A proposed beginner-friendly paddling meetup near Georgetown using a licensed rental operator. Rental requirements, water conditions, route, weather cancellation policy, capacity, and organizer will be confirmed in Discord.',
+    discordLink: 'https://discord.gg/dC8vPZmXx9',
+  },
+  {
+    id: 'nova-speed-friending',
+    title: 'Speed Friending: NoVA Edition',
+    date: '2026-10-10T18:30:00',
+    locationArea: 'VA',
+    locationLabel: 'Tysons, VA',
+    vibe: 'Speed Friending',
+    description:
+      'A proposed Northern Virginia edition with rotating conversations and structured prompts. The Tysons-area venue, capacity, host, exact round format, cost, and optional post-event plan will be confirmed in Discord.',
+    discordLink: 'https://discord.gg/dC8vPZmXx9',
+  },
+]
