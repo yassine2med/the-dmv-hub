@@ -29,7 +29,7 @@ export function Nav() {
             <AnimatedLogo />
           </Link>
 
-          <nav className="hidden items-center gap-1.5 rounded-full border border-hub-border bg-hub-card p-1.5 md:flex shadow-[0_6px_20px_-12px_rgba(60,40,20,0.25)] transition-colors duration-300">
+          <nav className="hidden items-center gap-1.5 rounded-full border border-hub-border bg-hub-card p-1.5 xl:flex shadow-[0_6px_20px_-12px_rgba(60,40,20,0.25)] transition-colors duration-300">
             {navLinks.map((link) => {
               const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href))
               return (
@@ -51,7 +51,7 @@ export function Nav() {
             })}
           </nav>
 
-          <div className="hidden md:flex items-center gap-2">
+          <div className="hidden xl:flex items-center gap-2">
             <ThemeToggle />
             <div className="flex items-center rounded-xl border border-hub-border bg-hub-card p-1 shadow-[0_6px_20px_-12px_rgba(60,40,20,0.25)] transition-all hover:border-hub-terracotta/40">
               <a
@@ -71,7 +71,7 @@ export function Nav() {
           </div>
 
           <button
-            className="rounded-lg border border-hub-border bg-hub-card p-2 text-hub-muted hover:text-hub-text md:hidden focus:outline-none"
+            className="rounded-lg border border-hub-border bg-hub-card p-2 text-hub-muted hover:text-hub-text xl:hidden focus:outline-none"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
           >
@@ -86,7 +86,7 @@ export function Nav() {
         </div>
 
         {open && (
-          <div className="space-y-3 border-t border-hub-border py-4 md:hidden">
+          <div className="space-y-3 border-t border-hub-border py-4 xl:hidden">
             {navLinks.map((link) => {
               const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href))
               return (
